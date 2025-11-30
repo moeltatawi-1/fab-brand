@@ -35,7 +35,7 @@ export default function App() {
   )
 }
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Cart from "./pages/cart";
+import Cart from "./cart";
 import Checkout from "./pages/Checkout";
 
 function App() {
