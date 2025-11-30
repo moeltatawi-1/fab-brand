@@ -9,7 +9,7 @@ export default function Checkout(){
 
   async function placeOrder(e){
     e.preventDefault()
-    const res = await fetch('/.netlify/functions/create-order', { // Netlify function route
+    const res = await fetch('/netlify/functions/create-order', { // Netlify function route
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify({customer:{name,email}, items: cart})
